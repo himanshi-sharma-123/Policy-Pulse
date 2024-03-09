@@ -1,4 +1,14 @@
-import { FaHeartCircleCheck } from "react-icons/fa6";
+import {
+  FaCalculator,
+  FaHandshake,
+  FaHeartCircleCheck,
+  FaUserGraduate,
+} from "react-icons/fa6";
+import { MdFamilyRestroom, MdOutlineElderlyWoman } from "react-icons/md";
+import { PiPottedPlantFill } from "react-icons/pi";
+
+import { TbPigMoney } from "react-icons/tb";
+
 import { Card } from "flowbite-react";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -70,6 +80,30 @@ const lists = [
   },
 ];
 
+const getEmojiComponent = (header) => {
+  switch (header) {
+    case "Health Plans":
+      return <FaHeartCircleCheck className="w-full h-10" />;
+    case "Child Plans":
+      return <FaUserGraduate className="w-full h-10" />;
+    case "Pension Plans":
+      return <MdOutlineElderlyWoman className="w-full h-10" />;
+    case "Term Plans":
+      return <MdFamilyRestroom className="w-full h-10" />;
+    case "Single Premium Plans":
+      return <TbPigMoney className="w-full h-10" />;
+    case "Money Back Plans":
+      return <FaCalculator className="w-full h-10" />;
+    case "Ulip Plans":
+      return <PiPottedPlantFill className="w-full h-10" />;
+    case "Endownment Plans":
+      return <FaHandshake className="w-full h-10" />;
+
+    default:
+      return null;
+  }
+};
+
 const Banner = () => {
   return (
     <div className="px-4 lg:px-24 flex items-center bg-cyan-200">
@@ -82,7 +116,9 @@ const Banner = () => {
               key={i}
             >
               <div className="flex-grow ">
-                <FaHeartCircleCheck className="w-full h-10" />
+                {getEmojiComponent(list.header)} {/* Get emoji dynamically */}
+                {/* <p className="w-full h-10">{lists.emojis}</p> */}
+                {/* <FaHeartCircleCheck className="w-full h-10" /> */}
                 <h6 className="mt-3">{list.header}</h6>
                 <ul className="mt-3">
                   {list.sublists.map((sublist, index) => (
