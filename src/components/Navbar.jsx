@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa6";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const lists = [
   {
@@ -194,6 +202,43 @@ const Navbar = () => {
               )}
             </li>
           ))}
+        </ul>
+      </div>
+
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 ml-2.5">
+        <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.linkedin.com/in/lokesh-sharma-509a2b116/"
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-900">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="Lokesh Shrma"
+            >
+              Instagram <FaInstagram size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-400">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="9818122882"
+            >
+              Whatsapp <FaWhatsapp size={30} />
+            </a>
+          </li>
+          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://drive.google.com/file/d/1uqP0pIHX-zpKP3_TM9t2nibr8OE3DLu-/view?usp=sharing"
+            >
+              Resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li> */}
         </ul>
       </div>
     </header>
