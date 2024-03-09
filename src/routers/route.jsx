@@ -29,12 +29,18 @@ import SPE from "../components/subItems/endownment-plans/SPE";
 import JeevanAkshay from "../components/subItems/pension-plans/JeevanAkshay";
 import JeevanShanti from "../components/subItems/pension-plans/JeevanShanti";
 import SaralPension from "../components/subItems/pension-plans/SaralPension";
+import Home from "../home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+
       {
         path: "/health-plans/arogya-rakshak",
         element: <ArogyaRakshak />,
