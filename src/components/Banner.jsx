@@ -106,21 +106,23 @@ const getEmojiComponent = (header) => {
 
 const Banner = () => {
   return (
-    <div className="px-4 lg:px-24 flex items-center ">
+    <div className="px-4 lg:px-24 flex items-center bg-[#5CDB95]">
       <div className="flex w-full flex-col md:flex-row justify-between items-center py-40">
         {/* <div className="md:w-1/2 h-full grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ml-20"> */}
         <div className="grid lg:my-12 gap-10 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-4 grid-cols-1 lg:ml-20 md:mt-40 sm:mt-40">
           {lists.map((list, i) => (
             <Card
-              className="w-full cursor-pointer flex flex-col items-center "
+              className="w-full cursor-pointer flex flex-col items-center hover:scale-110 duration-500 border-green-800"
               key={i}
             >
               <div className="flex-grow ">
                 {getEmojiComponent(list.header)} {/* Get emoji dynamically */}
                 {/* <p className="w-full h-10">{lists.emojis}</p> */}
                 {/* <FaHeartCircleCheck className="w-full h-10" /> */}
-                <h6 className="mt-3">{list.header}</h6>
-                <ul className="mt-3">
+                <h6 className="mt-3 text-green-500 font-bold text-xl">
+                  {list.header}
+                </h6>
+                <ul className="mt-3 text-gray-500 underline font-bold">
                   {list.sublists.map((sublist, index) => (
                     <Link to="/" key={index}>
                       {" "}
