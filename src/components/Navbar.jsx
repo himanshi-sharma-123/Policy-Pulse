@@ -177,7 +177,7 @@ const Navbar = () => {
                 {list.header} <i className="fas fa-caret-down" />
               </Link>
               {hoveredIndex === index && (
-                <ul className="absolute bg-gray-200 flex flex-col gap-1 top-15 border-r-8">
+                <ul className="absolute bg-gray-200 flex flex-col gap-1 top-15 border-r-8 rounded-lg pb-2 text-green-500 font-bold font-serif">
                   {list.sublists &&
                     list.sublists.map((sublist, subIndex) => (
                       <div key={subIndex}>
@@ -202,6 +202,7 @@ const Navbar = () => {
               )}
             </li>
           ))}
+          {/* <div className="bg-[#05386B] h-8 rounded-lg text-2xl">Contact us</div> */}
         </ul>
       </div>
 
