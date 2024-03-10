@@ -106,7 +106,7 @@ const getEmojiComponent = (header) => {
 
 const Banner = () => {
   return (
-    <div className="px-4 lg:px-24 flex items-center bg-cyan-200">
+    <div className="px-4 lg:px-24 flex items-center ">
       <div className="flex w-full flex-col md:flex-row justify-between items-center py-40">
         {/* <div className="md:w-1/2 h-full grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 ml-20"> */}
         <div className="grid lg:my-12 gap-10 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-4 grid-cols-1 lg:ml-20 md:mt-40 sm:mt-40">

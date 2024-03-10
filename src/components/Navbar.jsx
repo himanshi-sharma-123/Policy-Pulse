@@ -118,7 +118,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full bg-transparent fixed top-0 left-0 right-0 transition-all ease-in duration-300">
+    <header className="fixed w-full bg-transparent top-0 left-0 right-0 transition-all ease-in duration-300 bg-white">
       <div className="md:flex flex-col items-center justify-center lg:flex-row lg:justify-between">
         <div className="flex flex-row items-center lg:items-start lg:ml-40 justify-center">
           <img className="w-20" src={logo} alt="" />
