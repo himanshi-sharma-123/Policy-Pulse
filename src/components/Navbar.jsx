@@ -80,7 +80,8 @@ const lists = [
       "Jeevan Anand",
       "Jeevan Labh",
       "Jeevan Lakshya",
-      "Jeevan Rakshak",
+      "Jeevan Azad",
+      "Dhan Vriddhi",
       "New Endownment",
       "Single Premium Endownment",
     ],
@@ -91,7 +92,8 @@ const lists = [
       "/endownment-plans/jeevan-anand",
       "/endownment-plans/jeevan-labh",
       "/endownment-plans/jeevan-lakshya",
-      "/endownment-plans/jeevan-rakshak",
+      "/endownment-plans/jeevan-azad",
+      "/endownment-plans/dhan-vriddhi",
       "/endownment-plans/new-endownment",
       "/endownment-plans/single-premium-endownment",
     ],
@@ -191,9 +193,9 @@ const Navbar = () => {
                           <li>{sublist}</li>
                         )}
                         {subIndex !== list.sublists.length - 1 && (
-                          <div class="flex items-center">
-                            <div class="w-24 h-1 border-b border-dotted border-black"></div>
-                            <div class="w-24 h-1 border-b border-dotted border-black"></div>
+                          <div className="flex items-center">
+                            <div className="w-24 h-1 border-b border-dotted border-black"></div>
+                            <div className="w-24 h-1 border-b border-dotted border-black"></div>
                           </div>
                         )}
                       </div>

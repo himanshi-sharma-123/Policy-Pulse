@@ -20,16 +20,17 @@ import LicNP from "../components/subItems/ulip-plans/LicNP";
 import AadhaarShila from "../components/subItems/endownment-plans/AadhaarShila";
 import AadhaarStambh from "../components/subItems/endownment-plans/AadhaarStambh";
 import BimaJyoti from "../components/subItems/endownment-plans/BimaJyoti";
-import JeevanAnand from "../components/subItems/endownment-plans/JeevanAnand";
 import JeevanLabh from "../components/subItems/endownment-plans/JeevanLabh";
 import JeevanLakshya from "../components/subItems/endownment-plans/JeevanLakshya";
-import JeevanRakshak from "../components/subItems/endownment-plans/JeevanRakshak";
+import JeevanAnand from "../components/subItems/endownment-plans/JeevanAnand";
 import NewEndownment from "../components/subItems/endownment-plans/NewEndownment";
 import SPE from "../components/subItems/endownment-plans/SPE";
 import JeevanAkshay from "../components/subItems/pension-plans/JeevanAkshay";
 import JeevanShanti from "../components/subItems/pension-plans/JeevanShanti";
 import SaralPension from "../components/subItems/pension-plans/SaralPension";
 import Home from "../home/Home";
+import JeevanAzad from "../components/subItems/endownment-plans/JeevanAzad";
+import DhanVriddhi from "../components/subItems/endownment-plans/DhanVriddhi";
 
 const router = createBrowserRouter([
   {
@@ -134,8 +135,8 @@ const router = createBrowserRouter([
         element: <JeevanLakshya />,
       },
       {
-        path: "/endownment-plans/jeevan-rakshak",
-        element: <JeevanRakshak />,
+        path: "/endownment-plans/jeevan-azad",
+        element: <JeevanAzad />,
       },
       {
         path: "/endownment-plans/new-endownment",
@@ -145,6 +146,11 @@ const router = createBrowserRouter([
         path: "/endownment-plans/single-premium-endownment",
         element: <SPE />,
       },
+      {
+        path: "/endownment-plans/dhan-vriddhi",
+        element: <DhanVriddhi />,
+      },
+
       {
         path: "/pension-plans/jeevan-akshay",
         element: <JeevanAkshay />,

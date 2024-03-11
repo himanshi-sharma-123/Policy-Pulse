@@ -3,81 +3,86 @@ import Contact from "../../../home/Contact";
 import { FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
-const JeevanLakshya = () => {
+const DhanVriddhi = () => {
   return (
     <div className="flex flex-col md:flex-row lg:mt-20 ml-20 sm:mt-60">
       <div className="md:w-1/2 md:ml-20">
         <h1 className="text-5xl text-gray-500 lg:mt-20 sm:mt-20">
-          Jeevan Lakshya (933){" "}
+          LIC's Dhan Vriddhi
         </h1>
         <hr className="border-black mt-2" />
         <div className="mt-10 item-center">
-          <h1 className="text-gray-500 text-2xl">
-            Plan : Jeevan Lakshya (933)
-          </h1>
+          <h1 className="text-gray-500 text-2xl">Plan : LIC's Dhan Vriddhi</h1>
           <h1 className="text-gray-500 font-bold mt-2">Product Summary:</h1>
           <p className="">
-            Jeevan Lakshya is a limited premium paying term with profit
-            endowment assurance plan with enhnced insurance coverage. Premium
-            paying term is 3 years lesser than the term of the policy.{" "}
+            Non Linked, Non participating, Individual, Savings, Single Premium
+            Life Insurance Plan. In other words, it is a single premium
+            endowment plan with guaranteed benefits.
           </p>
           <h1 className=" text-gray-500 mt-4 font-bold">
             Premium Payment Mode:
           </h1>
-          <p>Yearly, Half Yearly, Quartely, Monthly(SSS and NACH)</p>
+          <p>Single Premium</p>
           <h1 className="text-gray-500 font-bold mt-4">Term:</h1>
-          <p className="">3</p>
+          <p className="">10, 15 and 18 years</p>
           <h1 className="text-gray-500 font-bold mt-4">
             Minimum Age at Entry:
           </h1>
-          <p>18 Year completed</p>
+          <p>
+            18 Year Term-90 days completed; 15 year Term-3 Years completed; 10
+            Years term-8 Years completed
+          </p>
           <h1 className="text-gray-500 font-bold mt-4">
             Maximum Age at Entry:
           </h1>
-          <p>50 years (Nearest birth day)</p>
+          <p>
+            {" "}
+            Option 1(1.25 times SA) 60 Years; Option 2(10 times SA)10 Term -
+            40;15 Term - 35 Years; 18 Term 32 Years
+          </p>
           <h1 className="text-gray-500 font-bold mt-4">
             Maximum Maturity Age:
           </h1>
-          <p>65 Year (nearest bithday)</p>
-          <h1 className="text-gray-500 font-bold mt-4">Minimum Sum Assured:</h1>
-          <p>1,00,000</p>
-          <h1 className="text-gray-500 font-bold mt-4">Maximum Sum Assured:</h1>
-          <p>No Limit (Subject to other conditions)</p>
+          <p>
+            Option 1(1.25 times SA) 78 Years; Option 2(10 times SA) 50 Years
+          </p>
           <h1 className="text-gray-500 font-bold mt-4">
-            Riders Available ADDB/AB, Critical Illness Rider, Term Rider.
+            {" "}
+            Maturity Benefit Sum Assured along with Guaranteed additions
           </h1>
+
+          <h1 className="text-gray-500 font-bold mt-4"> Sum Assured:</h1>
+          <p>1,25,000</p>
+          <h1 className="text-gray-500 font-bold mt-4">
+            Riders available AD and DB and Term rider
+          </h1>
+          <h1 className="text-gray-500 font-bold mt-4"> Settlement Options:</h1>
+          <p>Available for 5 years</p>
+          <h1 className="text-gray-500 font-bold mt-4">
+            {" "}
+            Multiple Allowed 5000
+          </h1>
+
           <h1 className="text-gray-500 font-bold mt-4">
             Accidental Death and Disability Benefit (ADDB):
           </h1>
-          <p>up to Age 65</p>
           <h1 className="text-gray-500 font-bold mt-4">On Death:</h1>
           <p>
-            On death: annual income benefit equal to 10 % of the basic sum
-            assured (till policy anniversary prior to date of maturity) + 110%
-            of Basic sum assured +vested bonus and FAB(if any) at the time of
-            maturity.
-          </p>
-          <h1 className="text-gray-500 font-bold mt-4">On Survival:</h1>
-          <p>
-            Basic Sum Assured + Vested Bonus + Final Additional Bonus (if any)
+            Death Benefit Sum Assured on death' along with Guaranteed additions
+            (where sum assured on death is 1.25 times tabular premium for option
+            1 and 10 times tabular premium for option 2)
           </p>
           <h1>Surrender Value:</h1>
-          <p>
-            Policy can be surrendered at any time during the policy term
-            provided at least 2 full years premium have been paid and two full
-            years completed since inception of policy.{" "}
-          </p>
+          <p>Policy can be surrenderd any time during the term of the policy</p>
           <h1 className="text-gray-500 font-bold mt-4">Loan:</h1>
           <p>
-            Loan can be availed at any time during the policy term provided at
-            least 2 full years premium have been paid and two full years
-            completed since inception of policy.{" "}
+            Loan available any time after 3 months from the date of completion
+            of the policy.{" "}
           </p>
           <h1 className="text-gray-500 font-bold mt-4">Income Tax Benefit:</h1>
           <p>
-            Premium paid under the policy is eligible for Tax rebate under
-            section 80C. Maturity benefit under this policy is tax free under
-            section 10 (10 D) of income tax act.
+            Available for Option 2 [on Premium paid u/s 80C and Maturity benefit
+            under section 10(10D)]{" "}
           </p>
         </div>
       </div>
@@ -101,4 +106,4 @@ const JeevanLakshya = () => {
   );
 };
 
-export default JeevanLakshya;
+export default DhanVriddhi;
