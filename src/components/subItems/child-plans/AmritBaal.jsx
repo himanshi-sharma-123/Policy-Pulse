@@ -3,43 +3,41 @@ import Contact from "../../../home/Contact";
 import { FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 
-const ChildMoneyBack = () => {
+const AmritBaal = () => {
   return (
     <div className="flex flex-col md:flex-row lg:mt-20 ml-20 sm:mt-60">
       <div className="md:w-1/2 md:ml-20">
         <h1 className="text-5xl text-gray-500 lg:mt-20 sm:mt-20">
-          Childrens Money Back (932)
+          Amrit Baal - 874
         </h1>
         <hr className="border-black mt-2" />
         <div className="mt-10 item-center">
-          <h1 className="text-gray-500 text-2xl">
-            Plan : Childrens Money Back (932)
-          </h1>
+          <h1 className="text-gray-500 text-2xl">Plan : Amrit Baal - 874</h1>
           <h1 className="text-gray-500 font-bold mt-2">Product Summary:</h1>
           <p className="">
-            Childrens Money Back plan is a regular premium, non linked childrens
-            plan, to help planning for the eduaction and or marriage of children
+            AmritBaal is a Non-linked, Guaranteed benefits, Savings plan
+            designed to meet the higher education and other needs of children.{" "}
           </p>
           <h1 className=" text-gray-500 mt-4 font-bold">
             Premium Payment Mode:
           </h1>
           <p>Yearly, Half Yearly, Quartely, Monthly(SSS and NACH)</p>
           <h1 className="text-gray-500 font-bold mt-4">Term:</h1>
-          <p className="">25 - age at entry</p>
+          <p className="">10 to 25 years</p>
           <h1 className="text-gray-500 font-bold mt-4">
             Minimum Age at Entry:
           </h1>
-          <p>0 Year last birthday</p>
+          <p>30 days</p>
           <h1 className="text-gray-500 font-bold mt-4">
             Maximum Age at Entry:
           </h1>
-          <p>12 year last birthday</p>
+          <p>13 year last birthday</p>
           <h1 className="text-gray-500 font-bold mt-4">
             Maximum Maturity Age:
           </h1>
-          <p>Not applicable</p>
+          <p>25 years(last birthday)</p>
           <h1 className="text-gray-500 font-bold mt-4">Minimum Sum Assured:</h1>
-          <p>1,00,000</p>
+          <p>2,00,000</p>
           <h1 className="text-gray-500 font-bold mt-4">Maximum Sum Assured:</h1>
           <p>No Limit (Subject to other conditions)</p>
           <h1 className="text-gray-500 font-bold mt-4">
@@ -55,16 +53,11 @@ const ChildMoneyBack = () => {
             On death before date of commencement of risk : An amount equal to
             the total amount of premiums paid excluding, extra premium and rider
             premium, if any shall be payable. On death after the date of
-            commencement of risk: Sum Assured on death + vested Simple
-            Reversionary Bonus and Final Additional Bonus (if any).{" "}
+            commencement of risk: Sum Assured on death + Accrued Guaranteed
+            Additions.{" "}
           </p>
           <h1 className="text-gray-500 font-bold mt-4">On Survival:</h1>
-          <p>
-            On completion of age 18 Years - 20% of Maturity Sum Assured. On
-            completion of 20 years of age - 20% of sum assured. On completion of
-            22 years of age 20% of sum assured, On Maturity at age 25 years 40%
-            of Maturity Sum Assured + FAB.
-          </p>
+          <p>Basic Sum Assured + Aaccrued Guaranteed Additions. </p>
           <h1>Surrender Value:</h1>
           <p>
             Policy can be surrendered at any time during the policy term
@@ -105,4 +98,4 @@ const ChildMoneyBack = () => {
   );
 };
 
-export default ChildMoneyBack;
+export default AmritBaal;

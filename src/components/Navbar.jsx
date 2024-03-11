@@ -21,10 +21,16 @@ const lists = [
   {
     id: 2,
     header: "Child Plans",
-    sublists: ["Child Money Back", "Jeevan Tarun", "Single Premium Endownment"],
+    sublists: [
+      "Child Money Back",
+      "Jeevan Tarun",
+      "Amrit Baal",
+      "Single Premium Endownment",
+    ],
     links: [
       "/child-plans/child-money-back",
       "/child-plans/jeevan-tarun",
+      "/child-plans/amrit-baal",
       "/child-plans/single-premium-endownment",
     ],
   },
