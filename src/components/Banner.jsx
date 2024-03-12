@@ -78,6 +78,11 @@ const lists = [
       "Jeevan Pragati",
     ],
   },
+  {
+    id: 9,
+    header: "Whole Life",
+    sublists: ["Jeevan Umang", "Jeevan Utsav"],
+  },
 ];
 
 const getEmojiComponent = (header) => {
@@ -98,6 +103,8 @@ const getEmojiComponent = (header) => {
       return <PiPottedPlantFill className="w-full h-10" />;
     case "Endownment Plans":
       return <FaHandshake className="w-full h-10" />;
+    case "Whole Life":
+      return <FaHandshake className="w-full h-10" />;
 
     default:
       return null;
@@ -112,7 +119,8 @@ const Banner = () => {
         <div className="grid lg:my-12 gap-10 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-4 grid-cols-1 lg:ml-20 md:mt-40 sm:mt-40">
           {lists.map((list, i) => (
             <Card
-              className="w-full cursor-pointer flex flex-col items-center hover:scale-110 duration-500 border-green-800"
+              // className="w-full cursor-pointer flex flex-col items-center hover:scale-110 duration-500 border-green-800"
+              className="w-full cursor-pointer flex flex-col items-center duration-500 border-green-800 hover:animate-fadeinup"
               key={i}
             >
               <div className="flex-grow ">
