@@ -6,7 +6,16 @@ export default {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        fadeinup: "fadeinup 0.5s ease-out",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
+  variants: {
+    extend: {
+      animation: ["hover"],
+    },
+  },
 };

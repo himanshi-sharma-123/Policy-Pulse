@@ -32,6 +32,8 @@ import Home from "../home/Home";
 import JeevanAzad from "../components/subItems/endownment-plans/JeevanAzad";
 import DhanVriddhi from "../components/subItems/endownment-plans/DhanVriddhi";
 import AmritBaal from "../components/subItems/child-plans/AmritBaal";
+import JeevanUmang from "../components/subItems/whole-life/JeevanUmang";
+import JeevanUtsav from "../components/subItems/whole-life/JeevanUtsav";
 
 const router = createBrowserRouter([
   {
@@ -168,6 +170,14 @@ const router = createBrowserRouter([
       {
         path: "/pension-plans/saral-pension",
         element: <SaralPension />,
+      },
+      {
+        path: "/whole-life/jeevan-umang",
+        element: <JeevanUmang />,
+      },
+      {
+        path: "/whole-life/jeevan-utsav",
+        element: <JeevanUtsav />,
       },
     ],
   },

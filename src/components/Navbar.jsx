@@ -105,7 +105,7 @@ const lists = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     header: "Pension Plans",
     sublists: ["Jeevan Akshay VII", "New Jeevan Shanti", "Saral Pension"],
     links: [
@@ -113,6 +113,12 @@ const lists = [
       "/pension-plans/new-jeevan-shanti",
       "/pension-plans/saral-pension",
     ],
+  },
+  {
+    id: 9,
+    header: "Whole Life Plans",
+    sublists: ["Jeevan Utsav", "Jeevan Umang"],
+    links: ["/whole-life/jeevan-utsav", "/whole-life/jeevan-umang"],
   },
 ];
 
@@ -136,13 +142,16 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col gap-5 items-center lg:flex-row lg:gap-20 lg:mr-40">
           <div className="flex flex-col">
-            <h6 className="ml-auto">CALL US ON</h6>
-            <h2 className="text-gray-500">+91 - 9818321882</h2>
-            <h2 className="text-gray-500">+91 - 9818122882</h2>
+            <h6 className="ml-auto font-mono font-bold">CALL US ON</h6>
+            <h2 className="text-green-500 font-mono font-bold">
+              +91 - 9818122882
+            </h2>
           </div>
           <div className="flex flex-col ">
-            <h6 className="ml-auto">EMAIL US ON</h6>
-            <h4 className="text-gray-500 text-xs">liclokeshsharma@gmail.com</h4>
+            <h6 className="ml-auto font-mono font-bold">EMAIL US ON</h6>
+            <h4 className="text-gray-500 text-xs font-bold">
+              liclokeshsharma@gmail.com
+            </h4>
           </div>
         </div>
       </div>
@@ -166,7 +175,7 @@ const Navbar = () => {
           </div>
         )}
         <ul
-          className={`md:flex flex-col md:flex-row lg:ml-40 gap-10  ${
+          className={`md:flex flex-col md:flex-row lg:ml-20 gap-10  ${
             click ? "flex" : "hidden"
           }`}
         >
