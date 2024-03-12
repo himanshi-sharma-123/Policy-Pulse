@@ -1,11 +1,12 @@
 import React from "react";
 import lic from "../assets/lic.png";
+import about from "../assets/about.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row lg:ml-40 gap-5 mt-5">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-5 mt-5">
       <div className="lg:block sm:hidden md:hidden">
-        <img src={lic} alt="" />
+        <img src={about} alt="" />
       </div>
       <div className="md:w-full lg:w-1/2 bg-green-200 rounded-lg">
         <h1 className="text-3xl font-bold text-green-700 lg:ml-20 mt-10">
