@@ -5,7 +5,7 @@ import { IoMail } from "react-icons/io5";
 
 const NewEndownment = () => {
   return (
-    <div className="flex flex-col md:flex-row lg:mt-20 ml-20 sm:mt-60">
+    <div className="flex flex-col md:flex-row lg:mt-20 ml-20 mt-60">
       <div className="md:w-1/2 md:ml-20">
         <h1 className="text-5xl text-gray-500 lg:mt-20 sm:mt-20">
           New Endownment (914)
@@ -89,7 +89,7 @@ const NewEndownment = () => {
             liclokeshsharma@gmail.com
           </div>
         </div>
-        <div>
+        <div className="justify-center px-6 mr-10 py-0">
           <Contact />
         </div>
       </div>

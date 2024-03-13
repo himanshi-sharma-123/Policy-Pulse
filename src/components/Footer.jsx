@@ -13,8 +13,8 @@ const Footer = () => {
           <div>
             <h1 className="text-xl">Contact us</h1>
             <ul>
-              <li>+91 9818122882</li>
-              <li>liclokeshsharma@gmail.com</li>
+              <li className="lg:text-sm text-xs">+91 9818122882</li>
+              <li className="lg:text-sm text-xs">liclokeshsharma@gmail.com</li>
             </ul>
           </div>
           <div>

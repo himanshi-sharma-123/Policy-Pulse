@@ -5,7 +5,7 @@ import { IoMail } from "react-icons/io5";
 
 const JeevanTarun = () => {
   return (
-    <div className="flex flex-col md:flex-row lg:mt-20 ml-20 sm:mt-60">
+    <div className="flex flex-col md:flex-row lg:mt-20 ml-20 mt-60">
       <div className="md:w-1/2 md:ml-20">
         <h1 className="text-5xl text-gray-500 lg:mt-20 sm:mt-20">
           Jeevan Tarun (934)
@@ -67,7 +67,7 @@ const JeevanTarun = () => {
             of maturity. Option-4: 15% of Sum Assured every year for 5 years
             from age 20 to 24 and 25% Sum Assured at the time of maturity.
           </p>
-          <h1>Surrender Value:</h1>
+          <h1 className="text-gray-500 font-bold mt-4">Surrender Value:</h1>
           <p>
             Policy can be surrendered at any time during the policy term
             provided at least 2 full years premium have been paid and two full
@@ -99,7 +99,7 @@ const JeevanTarun = () => {
             liclokeshsharma@gmail.com
           </div>
         </div>
-        <div>
+        <div className="justify-center px-6 mr-10 py-0">
           <Contact />
         </div>
       </div>

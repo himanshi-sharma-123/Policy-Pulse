@@ -140,7 +140,8 @@ const Navbar = () => {
             POLICY PULSE
           </h3>
         </div>
-        <div className="flex flex-col gap-5 items-center lg:flex-row lg:gap-20 lg:mr-40">
+        {/* <div className="flex flex-col gap-5 items-center lg:flex-row lg:gap-20 lg:mr-40"> */}
+        <div className="hidden lg:flex flex-col gap-5 items-center lg:flex-row lg:gap-20 lg:mr-40">
           <div className="flex flex-col">
             <h6 className="ml-auto font-mono font-bold">CALL US ON</h6>
             <h2 className="text-green-500 font-mono font-bold">

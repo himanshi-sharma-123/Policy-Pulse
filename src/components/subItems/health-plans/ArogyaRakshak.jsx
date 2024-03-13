@@ -3,7 +3,7 @@ import Contact from "../../../home/Contact";
 
 const ArogyaRakshak = () => {
   return (
-    <div className="flex flex-col md:flex-row lg:mt-20 ml-20 sm:mt-60">
+    <div className="flex flex-col md:flex-row lg:mt-20 ml-20 mt-60">
       <div className="md:w-1/2 md:ml-20">
         <h1 className="text-5xl text-gray-500 lg:mt-20 sm:mt-20">
           AROGYA RAKSHAK
@@ -36,7 +36,7 @@ const ArogyaRakshak = () => {
           </h1>
         </div>
       </div>
-      <div className="md:w-2/6 md:mr-20 lg:mt-10 lg:ml-20 md:ml-20 sm:mr-20">
+      <div className="justify-center px-6 mr-10 py-0">
         <Contact />
       </div>
     </div>
