@@ -60,13 +60,22 @@ const Footer = () => {
             Copyright &copy; by Policy Pulse 2024 | All Rights Reserved{" "}
           </p>
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Link to="/">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/lokesh-sharma-509a2b116/"
+            >
               <FaLinkedin size={40} />
             </Link>
-            <Link to="/">
+            <Link
+              target="_blank"
+              to="https://www.youtube.com/@bimagurulokeshsharma"
+            >
               <FaYoutube size={40} />
             </Link>
-            <Link to="/">
+            <Link
+              target="_blank"
+              to="https://www.instagram.com/lokesh.shrma.58/"
+            >
               <FaInstagram size={40} />
             </Link>
           </div>

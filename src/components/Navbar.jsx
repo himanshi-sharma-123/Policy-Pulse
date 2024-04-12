@@ -8,6 +8,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaWhatsapp,
+  FaYoutube,
 } from "react-icons/fa6";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -228,26 +229,30 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/lokesh-sharma-509a2b116/"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-900">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
             <a
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
-              href="Lokesh Shrma"
+              href="https://www.youtube.com/@bimagurulokeshsharma"
             >
-              Instagram <FaInstagram size={30} />
+              Youtube <FaYoutube size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-400">
+
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-pink-700">
             <a
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
-              href="9818122882"
+              href="https://www.instagram.com/lokesh.shrma.58/"
             >
-              Whatsapp <FaWhatsapp size={30} />
+              Instagram <FaInstagram size={30} />
             </a>
           </li>
           {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
