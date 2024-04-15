@@ -5,12 +5,13 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import image1 from "../assets/55.png";
 import image2 from "../assets/lic.png";
+import fifteen from "../assets/15.jpeg";
 
 const images = [
   {
     id: 1,
-    image: image1,
-    date: "March 14 2024",
+    image: fifteen,
+    date: "March 15 2024",
   },
 
   {
@@ -24,33 +25,33 @@ const images = [
     date: "March 12 2024",
   },
 
-  {
-    id: 4,
-    image: image2,
-    date: "March 11 2024",
-  },
-  {
-    id: 5,
-    image: image1,
-    date: "March 10 2024",
-  },
+  // {
+  //   id: 4,
+  //   image: image2,
+  //   date: "March 11 2024",
+  // },
+  // {
+  //   id: 5,
+  //   image: image1,
+  //   date: "March 10 2024",
+  // },
 
-  {
-    id: 6,
-    image: image2,
-    date: "March 09 2024",
-  },
-  {
-    id: 7,
-    image: image1,
-    date: "March 08 2024",
-  },
+  // {
+  //   id: 6,
+  //   image: image2,
+  //   date: "March 09 2024",
+  // },
+  // {
+  //   id: 7,
+  //   image: image1,
+  //   date: "March 08 2024",
+  // },
 
-  {
-    id: 8,
-    image: image2,
-    date: "March 07 2024",
-  },
+  // {
+  //   id: 8,
+  //   image: image2,
+  //   date: "March 07 2024",
+  // },
 ];
 const ImageCard = () => {
   return (
