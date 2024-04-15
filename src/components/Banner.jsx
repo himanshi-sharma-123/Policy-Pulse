@@ -17,7 +17,8 @@ const lists = [
   {
     id: 1,
     header: "Health Plans",
-    sublists: ["Jeevan Arogya"],
+    sublists: ["Arogya Rakshak"],
+    toLists: ["/health-plans/arogya-rakshak"],
   },
   {
     id: 2,
@@ -27,25 +28,36 @@ const lists = [
       "Jeevan Tarun",
       "Single Premium Endownment",
     ],
+    toLists: [
+      "/child-plans/child-money-back",
+      "/child-plans/jeevan-tarun",
+      "/child-plans/amrit-baal",
+    ],
   },
   {
     id: 3,
     header: "Pension Plans",
-    sublists: ["Jeevan Nidhi", "Jeevan Akshay", "Jeevan Nidhi Single Premium"],
+    sublists: ["Jeevan Askshay VII", "New Jeevan Shanti", "Saral Pension"],
+    toLists: [
+      "/pension-plans/jeevan-akshay",
+      "/pension-plans/new-jeevan-shanti",
+      "/pension-plans/saral-pension",
+    ],
   },
   {
     id: 4,
     header: "Term Plans",
-    sublists: ["Anmol Jeevan", "Amulya Jeevan"],
+    sublists: ["Jeevan Amar", "Saral Jeevan Bima"],
+    toLists: ["/term-plans/jeevan-amar", "/term-plans/saral-jeevan-bima"],
   },
   {
     id: 5,
     header: "Single Premium Plans",
-    sublists: [
-      "Single Premium Plans",
-      "Bima Bachat",
-      "Jeevan Nidhi Single Premium",
-      "Jeevan Shikhar",
+    sublists: ["Single Premium Plans", "Bima Bachat", "Dhan Rekha"],
+    toLists: [
+      "/single-premium/bima-bachat",
+      "/single-premium/dhan-rekha",
+      "/single-premium/single-premium-endownment",
     ],
   },
   {
@@ -54,34 +66,43 @@ const lists = [
     sublists: [
       "New Money Back-20 Year",
       "New Money Back-25 Year",
-      "New Children's Money Back Plan",
       "Jeevan Tarun",
       "Bima Bachat",
+    ],
+    toLists: [
+      "/money-back/new-moneyback-20",
+      "/money-back/new-moneyback-25",
+      "/money-back/jeevan-tarun",
+      "/money-back/bima-bachat",
     ],
   },
   {
     id: 7,
     header: "Ulip Plans",
     sublists: ["New Endownment Plus"],
+    toLists: ["/ulip-plans/new-endownment-plus"],
   },
   {
     id: 8,
     header: "Endownment Plans",
     sublists: [
-      "New Endownment",
-      "New Jeevan Anand",
-      "Single Premium Endownment",
-      "Jeevan Rakshak",
-      "Limited Premium Endownment",
+      "Aadhaar Shila",
+      "Aadhar Stambh",
       "Jeevan Lakshya",
       "Jeevan Labh",
-      "Jeevan Pragati",
+    ],
+    toLists: [
+      "/endownment-plans/aadhaar-shila",
+      "/endownment-plans/aadhaar-stambh",
+      "/endownment-plans/jeevan-lakshya",
+      "/endownment-plans/jeevan-labh",
     ],
   },
   {
     id: 9,
     header: "Whole Life",
     sublists: ["Jeevan Umang", "Jeevan Utsav"],
+    toLists: ["/whole-life/jeevan-umang", "/whole-life/jeevan-utsav"],
   },
 ];
 
@@ -132,7 +153,7 @@ const Banner = () => {
                 </h6>
                 <ul className="mt-3 text-gray-500 underline font-bold">
                   {list.sublists.map((sublist, index) => (
-                    <Link to="/" key={index}>
+                    <Link to={list.toLists[index]} key={index}>
                       {" "}
                       <li key={index} className="text-sm">
                         {sublist}

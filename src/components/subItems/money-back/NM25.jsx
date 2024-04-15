@@ -1,7 +1,11 @@
 import React from "react";
 
 const NM25 = () => {
-  return <div>New Moneyback 25</div>;
+  return (
+    <div className="mt-60 ml-40 text-3xl font-bold text-gray-400">
+      <h1>No data available for now. Please check back Later</h1>
+    </div>
+  );
 };
 
 export default NM25;
